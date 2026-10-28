@@ -1,0 +1,14 @@
+
+name: StoicWisdom Daily Automation
+
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  daily-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm daily automation is running
+        run: echo "StoicWisdom daily automation is running."
